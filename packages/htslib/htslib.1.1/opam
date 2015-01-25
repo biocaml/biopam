@@ -1,0 +1,19 @@
+opam-version: "1.2"
+name: "htslib"
+version: "1.1"
+
+build: [make]
+
+build-test: [make "test"]
+
+depexts: [
+  [["ubuntu"] ["zlib1g-dev"]]
+  [["debian"] ["zlib1g-dev"]]
+]
+
+homepage: "http://www.htslib.org/"
+dev-repo: "https://github.com/samtools/htslib.git"
+bug-reports: "https://github.com/samtools/htslib/issues"
+license: "MIT/Expat, Modified-BSD"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"

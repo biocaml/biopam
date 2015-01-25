@@ -1,0 +1,37 @@
+lib: [
+  "libhts.dylib"
+  "libhts.dylib" {"libhts.1.1.dylib"}
+  "libhts.dylib" {"libhts.1.dylib"}
+  "libhts.a"
+  "htslib/bgzf.h"
+  "htslib/khash_str2int.h"
+  "htslib/synced_bcf_reader.h"
+  "htslib/faidx.h"
+  "htslib/klist.h"
+  "htslib/tbx.h"
+  "htslib/hfile.h"
+  "htslib/knetfile.h"
+  "htslib/vcf.h"
+  "htslib/hts.h"
+  "htslib/kseq.h"
+  "htslib/vcf_sweep.h"
+  "htslib/hts_defs.h"
+  "htslib/ksort.h"
+  "htslib/vcfutils.h"
+  "htslib/kfunc.h"
+  "htslib/kstring.h"
+  "htslib/khash.h"
+  "htslib/sam.h"
+]
+
+bin: [
+  "bgzip"
+  "tabix"
+]
+
+man: [
+  "tabix.1" {"man1/tabix.1"}
+  "faidx.5" {"man5/faidx.5"}
+  "sam.5"   {"man5/sam.5"}
+  "vcf.5"   {"man5/vcf.5"}
+]
