@@ -1,0 +1,24 @@
+opam-version: "1.2"
+name: "qualimap"
+version: "2.0.1"
+homepage: "http://qualimap.bioinfo.cipf.es/"
+doc: "http://qualimap.bioinfo.cipf.es/doc_html/index.html"
+bug-reports: "https://bitbucket.org/kokonech/qualimap/issues"
+license: "GPLv2"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+authors: [
+  "Fernando Garcia-Alcalde"
+  "Konstantin Okonechnikov"
+  "Jose Carbonell"
+  "Sonia Tarazona"
+  "Stefan Götz"
+  "Luis Miguel Cruz"
+  "Javier Santoyo"
+  "Joaquin Dopazo"
+  "Ana Conesa"
+]
+
+depexts: [
+  [["ubuntu"] ["libxml2-dev" "libcurl4-openssl-dev"]]
+]
