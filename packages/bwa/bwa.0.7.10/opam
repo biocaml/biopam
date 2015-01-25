@@ -5,15 +5,17 @@ authors: [
   "Heng Li"
   "Richard Durbin"
 ]
-homepage: "http://bio-bwa.sourceforge.net/"
-license: "GPLv3"
-maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
 
-build: [
-  [make]
-  ["cp" "bwa" bwa:bin]
-]
+build: [make]
 
 depexts: [
-  [["ubuntu"] ["zlibc"]]
+  [["ubuntu"] ["zlib1g-dev"]]
+  [["debian"] ["zlib1g-dev"]]
 ]
+
+homepage: "http://bio-bwa.sourceforge.net/"
+doc: "http://bio-bwa.sourceforge.net/bwa.shtml"
+dev-repo: "https://github.com/lh3/bwa.git"
+license: "GPLv3"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
