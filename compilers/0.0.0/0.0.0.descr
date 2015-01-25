@@ -1,0 +1,4 @@
+Absence of a compiler.
+
+Useful if you want to use OPAM strictly for non-OCaml packages because
+it avoids unnecessarily compiling and installing the OCaml compiler.

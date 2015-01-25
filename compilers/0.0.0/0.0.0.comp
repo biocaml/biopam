@@ -1,0 +1,7 @@
+opam-version: "1"
+version: "0.0.0"
+preinstalled: true
+
+env: [
+  [LD_LIBRARY_PATH += "%{lib}%"]
+]
