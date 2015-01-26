@@ -16,12 +16,7 @@ authors: [
   "Petr Danecek"
 ]
 
-build: [
-  ["wget" "https://github.com/samtools/htslib/archive/1.1.tar.gz"]
-  ["tar" "xzvf" "1.1.tar.gz"]
-  ["rm" "-f" "1.1.tar.gz"]
-  [make "HTSDIR=htslib-1.1"]
-]
+build: [make]
 
 depexts: [
  [ ["ubuntu"] ["libncurses-dev"] ]
