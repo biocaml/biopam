@@ -1,2 +1,2 @@
-archive: "https://github.com/samtools/htslib/archive/1.1.tar.gz"
-checksum: "d0be108a121ace289fc960b854625f84"
+archive: "http://sourceforge.net/projects/samtools/files/samtools/1.1/htslib-1.1.tar.bz2"
+checksum: "af44b6094ef65d890ad0a69fef42293e"
