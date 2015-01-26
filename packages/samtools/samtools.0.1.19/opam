@@ -1,6 +1,6 @@
 opam-version: "1.2"
 name: "samtools"
-version: "0.1.19-44428cd"
+version: "0.1.19"
 homepage: "http://samtools.sourceforge.net/"
 doc: "http://samtools.sourceforge.net/"
 dev-repo: "https://github.com/samtools/samtools.git"
