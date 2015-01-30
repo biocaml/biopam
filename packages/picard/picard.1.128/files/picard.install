@@ -1,0 +1,6 @@
+lib: [
+  "htsjdk-1.128.jar"
+  "libIntelDeflater.so"
+  "picard-lib.jar"
+  "picard.jar"
+]

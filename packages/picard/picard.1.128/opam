@@ -1,0 +1,14 @@
+opam-version: "1.2"
+name: "picard"
+version: "1.128"
+homepage: "http://broadinstitute.github.io/picard/"
+doc: "http://broadinstitute.github.io/picard/"
+dev-repo: "https://github.com/broadinstitute/picard.git"
+bug-reports: "https://github.com/broadinstitute/picard/issues"
+license: "MIT"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+
+depexts: [
+ [ ["ubuntu"] ["openjdk-7-jre-headless"] ]
+]
