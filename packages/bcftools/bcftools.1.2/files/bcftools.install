@@ -1,0 +1,9 @@
+bin: [
+  "bcftools"
+  "plot-vcfstats"
+  "vcfutils.pl"
+]
+
+man: [
+  "doc/bcftools.1" {"man/man1"}
+]

@@ -1,0 +1,27 @@
+opam-version: "1.2"
+name: "bcftools"
+version: "1.2"
+homepage: "http://www.htslib.org/"
+doc: "http://www.htslib.org/doc/bcftools-1.2.html"
+dev-repo: "https://github.com/samtools/bcftools.git"
+bug-reports: "https://github.com/samtools/bcftools/issues"
+license: "MIT/Expat"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+authors: [
+  "Nicholas Clarke"
+  "Petr Danecek <petr.danecek@sanger.ac.uk>"
+  "Warren Kretzschmar <winni@well.ox.ac.uk>"
+  "Heng Li"
+  "Shane McCarthy <sm15@sanger.ac.uk>"
+  "John Marshall <jm18@sanger.ac.uk>"
+  "Joel Martin"
+  "Stephan Schiffels"
+]
+
+build: [make]
+
+depexts: [
+ [ ["ubuntu"] ["libncurses-dev" "zlib1g-dev"] ]
+ [ ["debian"] ["libncurses-dev" "zlib1g-dev"] ]
+]
