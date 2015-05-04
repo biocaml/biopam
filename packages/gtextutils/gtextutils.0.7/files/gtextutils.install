@@ -1,0 +1,18 @@
+lib: [
+  "src/gtextutils/.libs/libgtextutils-0.7.0.dylib"
+  "src/gtextutils/.libs/libgtextutils-0.7.0.dylib" {"libgtextutils.dylib"}
+  "src/gtextutils/libgtextutils.la"
+  "src/gtextutils/.libs/libgtextutils.a"
+  "src/gtextutils/container_join.h" {"gtextutils/container_join.h"}
+  "src/gtextutils/text_line_reader.h" {"gtextutils/text_line_reader.h"}
+  "src/gtextutils/stream_wrapper.h" {"gtextutils/stream_wrapper.h"}
+  "src/gtextutils/natsort.h" {"gtextutils/natsort.h"}
+  "src/gtextutils/strnatcmp.h" {"gtextutils/strnatcmp.h"}
+  "src/gtextutils/outbuf3.hpp" {"gtextutils/outbuf3.hpp"}
+  "src/gtextutils/inbuf1.hpp" {"gtextutils/inbuf1.hpp"}
+  "src/gtextutils/tuple_parser.h" {"gtextutils/tuple_parser.h"}
+  "src/gtextutils/exit_manip.h" {"gtextutils/exit_manip.h"}
+  "src/gtextutils/string_tokenize.h" {"gtextutils/string_tokenize.h"}
+  "src/gtextutils/pipe_fitter.h" {"gtextutils/pipe_fitter.h"}
+  "gtextutils.pc"
+]

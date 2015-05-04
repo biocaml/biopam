@@ -1,0 +1,17 @@
+opam-version: "1.2"
+name: "gtextutils"
+version: "0.7"
+homepage: "https://github.com/agordon/libgtextutils"
+dev-repo: "https://github.com/agordon/libgtextutils.git"
+bug-reports: "https://github.com/agordon/libgtextutils/issues"
+license: "AGPLv3"
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+authors: [
+  "Assaf Gordon <assafgordon@gmail.com>"
+]
+
+build: [
+  ["./configure"]
+  [make]
+  ["./gen-pkg-config.sh"]
+]
