@@ -1,0 +1,26 @@
+opam-version: "1.2"
+name: "fastx-toolkit"
+version: "0.0.14"
+homepage: "http://hannonlab.cshl.edu/fastx_toolkit/"
+doc: "http://hannonlab.cshl.edu/fastx_toolkit/commandline.html"
+dev-repo: "https://github.com/agordon/fastx_toolkit.git"
+bug-reports: "https://github.com/agordon/fastx_toolkit/issues"
+license: "AGPLv3"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+authors: [
+  "Assaf Gordon <assafgordon@gmail.com>"
+]
+
+build: [
+  ["./configure" "PKG_CONFIG_PATH=%{gtextutils:lib}%"]
+  [make]
+]
+
+depends: ["gtextutils"]
+
+depexts: [
+ [ ["ubuntu"] ["sed" "gnuplot"] ]
+ [ ["debian"] ["sed" "gnuplot"] ]
+ [ ["osx" "homebrew"] ["gnuplot"] ]
+]
