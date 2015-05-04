@@ -1,8 +1,0 @@
-exec_prefix=/Users/ashish/.opam/solvuu/bin
-libdir=/Users/ashish/.opam/solvuu/lib/gtextutils
-includedir=/Users/ashish/.opam/solvuu/lib/gtextutils
-Name: gtextutils
-Description: Gordon's text-utility classes
-Version: 0.7
-Libs: -L${libdir} -lgtextutils
-Cflags: -I${includedir}
