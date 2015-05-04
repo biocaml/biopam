@@ -1,6 +1,9 @@
 lib: [
-  "src/gtextutils/.libs/libgtextutils-0.7.0.dylib"
-  "src/gtextutils/.libs/libgtextutils-0.7.0.dylib" {"libgtextutils.dylib"}
+  "?src/gtextutils/.libs/libgtextutils-0.7.0.dylib"
+  "?src/gtextutils/.libs/libgtextutils-0.7.0.dylib" {"libgtextutils.dylib"}
+  "?libgtextutils-0.7.so.0.0.0"
+  "?libgtextutils-0.7.so.0.0.0" {"libgtextutils-0.7.so.0"}
+  "?libgtextutils-0.7.so.0.0.0" {"libgtextutils.so"}
   "src/gtextutils/libgtextutils.la"
   "src/gtextutils/.libs/libgtextutils.a"
   "src/gtextutils/container_join.h" {"gtextutils/container_join.h"}
