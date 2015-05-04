@@ -8,21 +8,19 @@ bioinformatics packages implemented in other languages.
 To use this repository simply do:
 
 ```
-opam repository add bio https://github.com/solvuu/opam-repo-bio.git
+opam repository add biopam https://github.com/solvuu/biopam.git
 ```
-
-Instead of `bio`, you can name the repository however you prefer.
 
 Then, you can start installing packages, e.g.
 
 ```
-opam install bwa
+opam install bwa samtools picard
 ```
 
 ## Contribute
 
 Please fork and submit pull requests at
-[GitHub](https://github.com/solvuu/opam-repo-bio).
+[GitHub](https://github.com/solvuu/biopam).
 
 
 ## License
