@@ -19,12 +19,12 @@ We build and install each sub-project individually because:
 The default `make install` installs to locations that violate opam's
 directory structure. Usually this is resolved by providing a .install
 file, but that is difficult here since the set of files installed is
-large. Instead we use a trick; we set the prefix to `foo`, and then
+large. Instead we use a trick; we set the prefix to `_install`, and then
 use some cp commands to move the files en masse to the desired
 locations.
 *)
 build: [
-  ["./ngs-sdk/configure" "--prefix=foo"]
+  ["./ngs-sdk/configure" "--prefix=_install" "--build-prefix=_build"]
   [make "-C" "ngs-sdk"]
   [make "-C" "ngs-sdk" "install"]
 ]
