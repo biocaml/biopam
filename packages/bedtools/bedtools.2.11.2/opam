@@ -1,0 +1,16 @@
+opam-version: "1.2"
+name: "bedtools"
+version: "2.11.2"
+authors: [
+  "Aaron R. Quinlan"
+  "Ira M. Hall"
+]
+
+build: [make]
+
+homepage: "http://bedtools.readthedocs.org"
+doc: "http://bedtools.readthedocs.org"
+dev-repo: "https://github.com/arq5x/bedtools2.git"
+license: "GPLv2"
+tags: ["biology"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
