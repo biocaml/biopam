@@ -19,6 +19,6 @@ authors: [
 build: [make]
 
 depexts: [
- [ ["ubuntu"] ["libncurses-dev"] ]
- [ ["debian"] ["libncurses-dev"] ]
+ [ ["ubuntu"] ["libncurses-dev" "zlib1g-dev"] ]
+ [ ["debian"] ["libncurses-dev" "zlib1g-dev"] ]
 ]
