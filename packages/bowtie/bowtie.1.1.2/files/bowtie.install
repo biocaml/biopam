@@ -1,0 +1,11 @@
+bin: [
+  "bowtie"
+  "bowtie-align-s"
+  "bowtie-build-l"
+  "bowtie-build-s"
+  "bowtie-inspect-s"
+  "bowtie-align-l"
+  "bowtie-build"
+  "bowtie-inspect"
+  "bowtie-inspect-l"
+]
