@@ -1,0 +1,23 @@
+opam-version: "1.2"
+name: "fastqc"
+version: "0.11.4"
+authors: [
+  "Simon Andrews"
+]
+
+build: [ "ant" ]
+
+install: [
+  ["./opam-install.sh" "%{fastqc:lib}%" "%{fastqc:bin}%"]
+]
+
+remove: [
+  ["rm" "-rf" "%{fastqc:lib}%"]
+  ["rm" "-f"  "%{fastqc:bin}%/fastqc"]
+]
+
+homepage: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
+doc: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/"
+license: "GPL3"
+tags: ["biology"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
