@@ -1,0 +1,29 @@
+opam-version: "1.2"
+name: "ncbi-sra-toolkit"
+version: "2.5.7"
+homepage: "http://www.ncbi.nlm.nih.gov/books/NBK158900/"
+doc: "http://www.ncbi.nlm.nih.gov/books/NBK158900/"
+dev-repo: "https://github.com/ncbi/sra-tools.git"
+bug-reports: "https://github.com/ncbi/sra-tools/issues"
+license: "Public Domain"
+tags: ["biology" "org:ncbi"]
+
+build: [
+  [
+    "./configure"
+      "--prefix=_install"
+      "--with-ngs-sdk-prefix=%{ncbi-ngs:lib}%"
+      "--with-ncbi-vdb-sources=%{ncbi-vdb:lib}%"
+      "--with-ncbi-vdb-build=%{ncbi-vdb:lib}%/_build"
+      "--build-prefix=_build"
+  ]
+  [make]
+  [make "install"]
+]
+
+depends: [
+  "ncbi-ngs" {>= "1.2.3"}
+  "ncbi-vdb" {>= "2.5.7"}
+]
+
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
