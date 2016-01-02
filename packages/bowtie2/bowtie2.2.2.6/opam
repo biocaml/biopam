@@ -1,0 +1,15 @@
+opam-version: "1.2"
+name: "bowtie2"
+version: "2.2.6"
+authors: [
+  "Ben Langmead"
+]
+
+build: [make]
+
+homepage: "http://bowtie-bio.sourceforge.net/bowtie2/index.shtml"
+doc: "http://bowtie-bio.sourceforge.net/bowtie2/manual.shtml"
+dev-repo: "https://github.com/BenLangmead/bowtie2.git"
+license: "GPL3"
+tags: ["biology"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
