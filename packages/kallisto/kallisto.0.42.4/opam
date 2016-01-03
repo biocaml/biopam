@@ -1,0 +1,23 @@
+opam-version: "1.2"
+name: "kallisto"
+version: "0.42.4"
+homepage: "http://pachterlab.github.io/kallisto/"
+doc: "https://pachterlab.github.io/kallisto/manual.html"
+dev-repo: "https://github.com/pachterlab/kallisto.git"
+bug-reports: "https://github.com/pachterlab/kallisto/issues"
+license: "BSD"
+tags: ["biology"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
+authors: [
+  "Nicolas Bray"
+  "Harold Pimentel"
+  "Páll Melsted"
+  "Lior Pachter"
+]
+
+build: ["./opam-build.sh"]
+
+depexts: [
+ [ ["ubuntu"] ["libhdf5-dev" "cmake"] ]
+ [ ["debian"] ["libhdf5-dev" "cmake"] ]
+]
