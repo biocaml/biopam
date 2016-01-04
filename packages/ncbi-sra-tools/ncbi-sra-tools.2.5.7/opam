@@ -26,4 +26,9 @@ depends: [
   "ncbi-vdb" {>= "2.5.7"}
 ]
 
+depexts: [
+ [ ["ubuntu"] ["libhdf5-dev"] ]
+ [ ["debian"] ["libhdf5-dev"] ]
+]
+
 maintainer: "Philippe Veber <philippe.veber@gmail.com>"

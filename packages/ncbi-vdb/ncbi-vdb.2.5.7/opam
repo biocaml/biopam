@@ -32,4 +32,9 @@ install: ["./opam-install.sh" "%{ncbi-vdb:lib}%"]
 remove: ["rm" "-rf" "%{ncbi-vdb:lib}%"]
 depends: ["ncbi-ngs"]
 
+depexts: [
+ [ ["ubuntu"] ["libhdf5-dev"] ]
+ [ ["debian"] ["libhdf5-dev"] ]
+]
+
 maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
