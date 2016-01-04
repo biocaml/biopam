@@ -27,8 +27,8 @@ depends: [
 ]
 
 depexts: [
- [ ["ubuntu"] ["libhdf5-dev"] ]
- [ ["debian"] ["libhdf5-dev"] ]
+ [ ["ubuntu"] ["libhdf5-dev" "libxml2-dev"] ]
+ [ ["debian"] ["libhdf5-dev" "libxml2-dev"] ]
 ]
 
 maintainer: "Philippe Veber <philippe.veber@gmail.com>"
