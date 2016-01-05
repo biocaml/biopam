@@ -1,0 +1,43 @@
+opam-version: "1.2"
+name: "spades"
+version: "3.6.2"
+authors: [
+  "Dmitry Antipov"
+  "Anton Bankevich"
+  "Alexey Gurevich"
+  "Anton Korobeynikov"
+  "Sergey Nurk"
+  "Andrey Prjibelski"
+  "Yana Safonova"
+  "Artem Tarasov"
+  "Irina Vasilinetc"
+  "Alla Lapidus"
+  "Glenn Tesler"
+  "Max Alekseyev"
+  "Pavel Pevzner"
+  "Mikhail Dvorkin"
+  "Alexander Kulikov"
+  "Valery Lesin"
+  "Sergey Nikolenko"
+  "Son Pham"
+  "Alexey Pyshkin"
+  "Vladislav Saveliev"
+  "Alexander Sirotkin"
+  "Yakov Sirotkin"
+  "Nikolay Vyahhi"
+]
+
+build: ["./opam-build.sh"]
+
+depends: ["bwa"]
+
+depexts: [
+  [["ubuntu"] ["libbz2-dev"]]
+  [["debian"] ["libbz2-dev"]]
+]
+
+homepage: "http://bioinf.spbau.ru/spades"
+doc: "http://spades.bioinf.spbau.ru/release3.6.2/manual.html"
+license: "GPLv2"
+tags: ["biology" "assembly"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
