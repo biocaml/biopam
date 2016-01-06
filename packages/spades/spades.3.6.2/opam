@@ -32,8 +32,8 @@ build: ["./opam-build.sh"]
 depends: ["bwa"]
 
 depexts: [
-  [["ubuntu"] ["libbz2-dev"]]
-  [["debian"] ["libbz2-dev"]]
+  [["ubuntu"] ["libbz2-dev" "cmake"]]
+  [["debian"] ["libbz2-dev" "cmake"]]
 ]
 
 homepage: "http://bioinf.spbau.ru/spades"
