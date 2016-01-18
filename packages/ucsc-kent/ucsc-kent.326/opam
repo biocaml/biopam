@@ -9,8 +9,8 @@ tags: ["biology" "org:ucsc"]
 build: ["./opam-build.sh"]
 
 depexts: [
-  [["ubuntu"] ["libmysqlclient-dev"]]
-  [["debian"] ["libmysqlclient-dev"]]
+  [["ubuntu"] ["libmysqlclient-dev" "libpng12-dev"]]
+  [["debian"] ["libmysqlclient-dev" "libpng12-dev"]]
 ]
 
 maintainer: "Philippe Veber <philippe.veber@gmail.com>"
