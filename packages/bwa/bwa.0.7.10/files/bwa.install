@@ -1,1 +1,2 @@
 bin: ["bwa"]
+man: ["bwa.1"]
