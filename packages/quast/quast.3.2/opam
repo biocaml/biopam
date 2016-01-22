@@ -1,0 +1,25 @@
+opam-version: "1.2"
+name: "quast"
+version: "3.2"
+authors: [
+  "Alexey Gurevich"
+  "Vladislav Saveliev"
+  "Nikolay Vyahhi"
+  "Glenn Tesler"
+]
+
+build: [
+  "./opam-build.sh" "%{prefix}%"
+]
+
+depexts: [
+  [["ubuntu"] ["python-matplotlib"]]
+  [["debian"] ["python-matplotlib"]]
+]
+
+homepage: "http://bioinf.spbau.ru/quast"
+doc: "http://quast.bioinf.spbau.ru/manual.html"
+dev-repo: "https://github.com/ablab/quast.git"
+license: "GPLv2"
+tags: ["biology" "assembly"]
+maintainer: "Philippe Veber <philippe.veber@gmail.com>"
