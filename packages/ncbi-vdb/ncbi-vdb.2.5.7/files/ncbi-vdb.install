@@ -1,0 +1,22 @@
+lib: [
+  "_install/lib64/libncbi-ngs-c++-static.a" {"lib64/libncbi-ngs-c++-static.a"}
+  "_install/lib64/libncbi-ngs-c++.a" {"lib64/libncbi-ngs-c++.a"}
+  "_install/lib64/libncbi-ngs-c++.a.2" {"lib64/libncbi-ngs-c++.a.2"}
+  "_install/lib64/libncbi-ngs-c++.a.2.5.7" {"lib64/libncbi-ngs-c++.a.2.5.7"}
+  "_install/lib64/libncbi-vdb-static.a" {"lib64/libncbi-vdb-static.a"}
+  "_install/lib64/libncbi-vdb.2.5.7.dylib" {"lib64/libncbi-vdb.2.5.7.dylib"}
+  "_install/lib64/libncbi-vdb.2.dylib" {"lib64/libncbi-vdb.2.dylib"}
+  "_install/lib64/libncbi-vdb.a" {"lib64/libncbi-vdb.a"}
+  "_install/lib64/libncbi-vdb.a.2" {"lib64/libncbi-vdb.a.2"}
+  "_install/lib64/libncbi-vdb.a.2.5.7" {"lib64/libncbi-vdb.a.2.5.7"}
+  "_install/lib64/libncbi-vdb.dylib" {"lib64/libncbi-vdb.dylib"}
+  "_install/lib64/libncbi-wvdb-static.a" {"lib64/libncbi-wvdb-static.a"}
+  "_install/lib64/libncbi-wvdb.2.5.7.dylib" {"lib64/libncbi-wvdb.2.5.7.dylib"}
+  "_install/lib64/libncbi-wvdb.2.dylib" {"lib64/libncbi-wvdb.2.dylib"}
+  "_install/lib64/libncbi-wvdb.a" {"lib64/libncbi-wvdb.a"}
+  "_install/lib64/libncbi-wvdb.a.2" {"lib64/libncbi-wvdb.a.2"}
+  "_install/lib64/libncbi-wvdb.a.2.5.7" {"lib64/libncbi-wvdb.a.2.5.7"}
+  "_install/lib64/libncbi-wvdb.dylib" {"lib64/libncbi-wvdb.dylib"}
+  "_install/lib64/ncbi/ncbi-vdb.kfg" {"lib64/ncbi/ncbi-vdb.kfg"}
+  "_install/include/ncbi-vdb/NGS.hpp" {"ncbi-vdb/NGS.hpp"}
+]

@@ -18,8 +18,9 @@ build: [
       "--build-prefix=_build"
   ]
   [make]
-  [make "install"]
 ]
+
+install: [make "install"]
 
 depends: [
   "ncbi-ngs" {>= "1.2.3"}
