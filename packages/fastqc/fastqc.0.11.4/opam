@@ -16,6 +16,12 @@ remove: [
   ["rm" "-f"  "%{fastqc:bin}%/fastqc"]
 ]
 
+depexts: [
+ [ ["ubuntu"] ["ant"] ]
+ [ ["debian"] ["ant"] ]
+ [ ["osx" "homebrew"] ["ant"] ]
+]
+
 homepage: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/"
 doc: "http://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/"
 license: "GPL3"
