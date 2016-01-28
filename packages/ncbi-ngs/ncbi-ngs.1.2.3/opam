@@ -15,6 +15,7 @@ build: [
 
 install: [
   [make "-C" "ngs-sdk" "install"]
+  ["mv" "ncbi-ngs.install.%{os}%" "ncbi-ngs.install"]
 ]
 
 maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
