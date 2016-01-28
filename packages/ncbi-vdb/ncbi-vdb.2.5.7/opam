@@ -19,8 +19,9 @@ build: [
 
 install: [
   [make "install"]
-  ["cp" "-a" "interfaces" ncbi-vdb:lib]
-  ["cp" "-a" "_build" ncbi-vdb:lib]
+  ["mkdir" ncbi-vdb:lib]
+  ["cp" "-PR" "_build" "%{ncbi-vdb:lib}%/"]
+  ["cp" "-PR" "interfaces" "%{ncbi-vdb:lib}%/"]
   ["mv" "ncbi-vdb.install.%{os}%" "ncbi-vdb.install"]
 ]
 
