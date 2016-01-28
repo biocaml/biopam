@@ -20,7 +20,7 @@ build: [
 depends: ["gtextutils"]
 
 depexts: [
- [ ["ubuntu"] ["sed" "gnuplot"] ]
- [ ["debian"] ["sed" "gnuplot"] ]
+ [ ["ubuntu"] ["sed" "gnuplot" "pkg-config"] ]
+ [ ["debian"] ["sed" "gnuplot" "pkg-config"] ]
  [ ["osx" "homebrew"] ["gnuplot"] ]
 ]
