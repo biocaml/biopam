@@ -18,6 +18,11 @@ We also manually remove directories `%{ncbi-vdb:lib}%/lib64` and
 empty directories. This should not be required since these
 directories' contents are represented entirely in the `.install` file.
 
+The external dependencies `libhdf5-dev` and `libxml2-dev` are
+optional, but we've declared them as required. It would take some more
+work to let them be optional.
+
+
 ## Version 2.5.0
 Not supporting this version. There is an error in its `make install`
 command. The result includes some broken links.
