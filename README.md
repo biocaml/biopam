@@ -1,4 +1,4 @@
-# OPAM repository for bioinformatics packages.
+# OPAM repository for bioinformatics tools
 
 Biopam provides the ability to install many bioinformatics packages
 with relative ease. For example, to install `samtools`, you need only
@@ -23,8 +23,8 @@ The rest of this documentation is targeted at 3 audiences:
    of this repo is largely what is relevant to you.
 
 3. Tool Developers - Some code is available to test packages and help
-   package developers. This code is implemented in the OCaml
-   programming language under the `bin/` directory.
+   package developers. This code is implemented in the `bin/`
+   directory.
 
 
 ## Users
@@ -57,7 +57,7 @@ useful ones are:
 - `opam list -a` to print a list of all available packages.
 
 - `opam info <pkg>` to see information about a particular package,
-  replace <pkg> with the actual name of a package.
+  replace \<pkg\> with the actual name of a package.
 
 - `opam install <pkg>.<version>` to install a specific version of a
   package. For example, `opam install samtools.0.1.19` will install
@@ -65,24 +65,22 @@ useful ones are:
 
 - `opam switch -A 0.0.0 <my-project>` to create an installation for a
   specific project with a name of your choice. Now you can install
-  specific verfsions of various tools as needed for this
+  particular versions of various tools as needed for this
   project. Create another switch for another project, and you can
   cleanly maintain different sets of tools for different projects.
 
 
-## PACKAGE DEVELOPERS
-
+## Package Developers
 See packaging instructions on [OPAM's
 site](http://opam.ocaml.org/doc/Packaging.html), and submit pull
 requests.
 
 
-## TOOL DEVELOPERS
+## Tool Developers
 See code under the `bin/` directory.
 
 
 ## License
-
 We follow the main [OPAM
 repository](https://github.com/ocaml/opam-repository), and release all
 metadata contained in this repository under the [CC0 1.0
