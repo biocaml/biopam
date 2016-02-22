@@ -5,18 +5,18 @@ authors: "Sebastian Boegel <boegels@uni-mainz.de>"
 license: "MIT"
 tags: ["biology"]
 
-# Nothing to build, seq2HLA is just a script
-build: []
-install: ["./opam-install.sh" "%{lib}%" "%{bin}%"]
-remove:  ["./opam-remove.sh"  "%{lib}%" "%{bin}%"]
+build: [ ["sh" "modify-paths.sh"]
+         ["pyinstaller" "--log-level" "ERROR" "seq2HLA.spec"]
+       ]
 depends: [
-	"conf-python-2-7"
-	"conf-R"
+  "bowtie"
+  "conf-python-2-7"
+  "conf-R"
 ]
 depexts: [
-  [["ubuntu"] ["python" "R" "pyinstaller"]]
-  [["debian"] ["python" "R" "pyinstaller"]]
-  [["osx"] ["python" "R" "pyinstaller"]]
+  [["ubuntu"] ["sed" "awk" "python" "R" "pyinstaller"]]
+  [["debian"] ["sed" "awk" "python" "R" "pyinstaller"]]
+  [["osx"] ["sed" "awk" "python" "R" "pyinstaller"]]
 ]
 
 homepage: "https://bitbucket.org/sebastian_boegel/seq2hla"
