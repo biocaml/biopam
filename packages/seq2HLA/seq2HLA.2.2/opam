@@ -22,6 +22,6 @@ depexts: [
 homepage: "https://bitbucket.org/sebastian_boegel/seq2hla"
 dev-repo: "https://bitbucket.org/sebastian_boegel/seq2hla"
 bug-reports: "https://bitbucket.org/sebastian_boegel/seq2hla/issues"
-post-messages: [ "seq2HLA has been wrapped into a custom exec."  {success} ]
+post-messages: [ "seq2HLA has been wrapped into a custom exec: seq2HLA"  {success} ]
 
 maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
