@@ -1,0 +1,13 @@
+SeqAn - The Library for Sequence Analysis
+
+SeqAn is an open source C++ library of efficient algorithms and data structures
+for the analysis of sequences with the focus on biological data. Our library
+applies a unique generic design that guarantees high performance, generality,
+extensibility, and integration with other libraries.
+
+This target installs the library into seqan:lib and the following applications:
+
+- alf
+- dfi
+- razers
+- razers3
