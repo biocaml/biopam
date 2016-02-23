@@ -5,3 +5,5 @@ standard RNA-Seq sequence reads in fastq format as input, uses a bowtie index
 comprising all HLA alleles and outputs the most likely HLA class I and class II
 genotypes (in 4 digit resolution), a p-value for each call, and the expression
 of each class.
+
+The package wraps the script into a standalone executable: seq2HLA.

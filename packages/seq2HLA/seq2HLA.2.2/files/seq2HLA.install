@@ -1,0 +1,1 @@
+bin: [ "dist/seq2HLA" ]
