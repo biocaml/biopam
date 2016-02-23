@@ -23,5 +23,4 @@ depexts: [
 ]
 
 maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
-
 post-messages: [ "The seqan library and executables, alf, dfi, razers, razers3 have been installed."  {success} ]
