@@ -1,0 +1,15 @@
+
+hiddenimports = [ 'pyomo.bilevel.plugins'
+                , 'pyomo.checker.plugins'
+                , 'pyomo.core.plugins'
+                , 'pyomo.dae.plugins'
+                , 'pyomo.gdp.plugins'
+                , 'pyomo.mpec.plugins'
+                , 'pyomo.neos.plugins'
+                , 'pyomo.openopt.plugins'
+                , 'pyomo.opt.plugins'
+                , 'pyomo.pysp.plugins'
+                , 'pyomo.repn.plugins'
+                , 'pyomo.scripting.plugins'
+                , 'pyomo.solvers.plugins'
+                ]

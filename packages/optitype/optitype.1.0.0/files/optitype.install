@@ -1,0 +1,7 @@
+bin: ["dist/OptiTypePipeline"]
+lib: [
+  "config.ini.example" {"config.ini.example"}
+  "data/alleles.h5" {"data/alleles.h5"}
+  "data/hla_reference_dna.fasta" {"data/hla_reference_dna.fasta"}
+  "data/hla_reference_rna.fasta" {"data/hla_reference_rna.fasta"}
+]

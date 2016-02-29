@@ -1,0 +1,30 @@
+opam-version: "1.2"
+name: "optitype"
+version: "1.0.0"
+authors: [ "András Szolek" "Benjamin Schubert" "Christopher Mohr"]
+license: "BSD"
+tags: ["biology"]
+build: ["pyinstaller" "--additional-hooks-dir=." "OptiTypePipeline.spec"]
+depends: [
+  "seqan"
+  "samtools"
+  "conf-python-2-7"
+  "conf-HDF5"
+]
+depexts: [
+  [["ubuntu"] ["python" "pyomo" "h5ls"]]
+  [["debian"] ["python" "pyomo" "h5ls"]]
+  [["osx"] ["python" "pyomo" "h5ls"]]
+]
+
+homepage: "https://github.com/FRED-2/OptiType"
+dev-repo: "https://github.com/FRED-2/OptiType.git"
+bug-reports: "https://github.com/FRED-2/OptiType/issues"
+post-messages: [
+  "OptiType has been wrapped into a custom exec: OptiTypePipeline."  {success}
+  "An example config file (config.ini.example) that is needed in for running OptiTypePipeline," {success}
+  "DNA and RNA reference fasta's, and an HDF5 lib of the alleles is in" {success}
+  "`opam config var lib`/optitype." {success}
+]
+
+maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
