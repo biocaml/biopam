@@ -1,0 +1,27 @@
+opam-version: "1.2"
+name: "seqan"
+version: "2.1.0"
+authors: [
+  "Andreas Döring"
+  "David Weese"
+  "Tobias Rausch"
+  "Knut Reinert"
+]
+homepage: "http://www.seqan.de"
+doc: "http://www.biomedcentral.com/1471-2105/9/11"
+dev-repo: "https://github.com/seqan/seqan.git"
+bug-reports: "https://github.com/seqan/seqan/issues"
+license: "BSD"
+tags: ["biology"]
+
+build: ["sh" "compile.sh"]
+
+depexts: [
+  [["ubuntu"] ["cmake" ]]
+  [["debian"] ["cmake" ]]
+  [["osx"] ["cmake"]]
+]
+
+maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
+
+post-messages: [ "The seqan library and executables, alf, dfi, razers, razers3 have been installed."  {success} ]
