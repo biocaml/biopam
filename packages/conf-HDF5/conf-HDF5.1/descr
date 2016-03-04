@@ -1,0 +1,2 @@
+Virtual package relying on an HDF5 installation.
+This package can only install if the HDF5 h5dump command is available on the system.
