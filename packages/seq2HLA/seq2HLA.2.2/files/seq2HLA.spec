@@ -15,6 +15,11 @@ a = Analysis(['seq2HLA.py'],
              win_no_prefer_redirects=False,
              win_private_assemblies=False,
              cipher=block_cipher)
+
+# Pyinstaller will silently ignore missing dependencies. To avoid having the
+# install script succeed, while the resulting executable won't run, we check
+# for the required packages here.
+
 # Check to make sure that Biopython is actaully in the system!
 if filter(lambda x: x[0].startswith('Bio'), a.pure) == []:
   print "Missing Biopython package!"
