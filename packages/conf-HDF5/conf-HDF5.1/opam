@@ -1,0 +1,12 @@
+opam-version: "1.2"
+maintainer: "leonidr@gmail.com"
+homepage: "https://www.hdfgroup.org/HDF5/"
+license: "BSD"
+build: [
+  ["h5dump" "--version"]
+]
+depexts: [
+  [["debian"] ["hdf5"]]
+  [["ubuntu"] ["hdf5"]]
+  [["osx"] ["hdf5"]]
+]
