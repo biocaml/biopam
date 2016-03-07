@@ -75,6 +75,19 @@ See packaging instructions on [OPAM's
 site](http://opam.ocaml.org/doc/Packaging.html), and submit pull
 requests.
 
+### Python scripts
+
+It is (lightly) suggested that `Python` scripts be converted to standalone
+executables via [Pyinstaller](https://github.com/pyinstaller/pyinstaller).
+This clarifies what version of `Python` is required by the script
+([2.7](https://www.python.org/downloads/) or
+[3.5](https://www.python.org/downloads/)). It also resolves all of the
+scripts library dependencies (eg. `numpy`, `biopython`) so that the
+user can make sure they are installed before running the application.
+This is readily accomplished via Pyinstaller-`spec` file,
+[OptiType](packages/optitype/optitype.1.0.0/files/OptiTypePipeline.spec)
+provides a good example.
+
 
 ## Tool Developers
 See code under the `bin/` directory.
