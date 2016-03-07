@@ -13,6 +13,9 @@ a = Analysis(['OptiTypePipeline.py'],
              win_private_assemblies=False,
              cipher=block_cipher)
 
+# Pyinstaller will silently ignore missing dependencies. To avoid having the
+# install script succeed, while the result won't run, we check for the required
+# packages here.
 packages = map(lambda x: x[0], a.pure)
 
 def check_package(module_name):
