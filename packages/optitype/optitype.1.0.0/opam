@@ -12,19 +12,25 @@ depends: [
   "conf-HDF5"
 ]
 depexts: [
-  [["ubuntu"] ["python" "pyomo" "h5ls"]]
-  [["debian"] ["python" "pyomo" "h5ls"]]
-  [["osx"] ["python" "pyomo" "h5ls"]]
+  [["ubuntu"] ["python" "pyinstaller" "pyomo" ]]
+  [["debian"] ["python" "pyinstaller" "pyomo" ]]
+  [["osx"] ["python" "pyinstaller" "pyomo" ]]
 ]
 
 homepage: "https://github.com/FRED-2/OptiType"
 dev-repo: "https://github.com/FRED-2/OptiType.git"
 bug-reports: "https://github.com/FRED-2/OptiType/issues"
+messages: [
+  "Trying to create an OptiTypePipeline executable, will check for the"
+  "following dependencies: Python2.7, pyinstaller, pyomo and HDF5."
+  ]
 post-messages: [
   "OptiType has been wrapped into a custom exec: OptiTypePipeline."  {success}
   "An example config file (config.ini.example) that is needed in for running OptiTypePipeline," {success}
   "DNA and RNA reference fasta's, and an HDF5 lib of the alleles is in" {success}
-  "`opam config var lib`/optitype." {success}
+  "`opam config var lib`/optitype. Therefore, when you wish to run OptiTypePipeline:" {success}
+  "cp -r `opam config var lib`/optitype/data . && cp -r `opam config var lib`/optitype/config.ini.example config.ini`," {success}
+  "in your work directory." {success}
 ]
 
 maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
