@@ -22,6 +22,16 @@ depexts: [
 homepage: "https://bitbucket.org/sebastian_boegel/seq2hla"
 dev-repo: "https://bitbucket.org/sebastian_boegel/seq2hla"
 bug-reports: "https://bitbucket.org/sebastian_boegel/seq2hla/issues"
-post-messages: [ "seq2HLA has been wrapped into a custom exec: seq2HLA"  {success} ]
+messages: [
+  "Trying to create an seq2HLA executable, will check for the"
+  "following dependencies: Python2.7, pyinstaller, and R."
+  ]
+
+post-messages: [
+  "seq2HLA has been wrapped into a custom exec: seq2HLA"  {success} 
+  "Reference data used by seq2HLA (HLAI.dbmhc and HLAII.dbmhc) are available:" {success}
+  " `opam config var lib`/seq2HLA/dist/seq2HLA/." {success}
+
+]
 
 maintainer: "Leonid Rozenberg <leonidr@gmail.com>"
