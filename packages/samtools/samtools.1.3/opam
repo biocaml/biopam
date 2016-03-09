@@ -1,0 +1,24 @@
+opam-version: "1.2"
+name: "samtools"
+version: "1.3"
+homepage: "http://www.htslib.org/"
+doc: "http://www.htslib.org/doc/samtools-1.3.html"
+dev-repo: "https://github.com/samtools/samtools.git"
+bug-reports: "https://github.com/samtools/samtools/issues"
+license: "MIT/Expat"
+tags: ["biology"]
+maintainer: "Ashish Agarwal <agarwal1975@gmail.com>"
+authors: [
+  "Heng Li"
+  "Bob Handsaker"
+  "Jue Ruan"
+  "Colin Hercus"
+  "Petr Danecek"
+]
+
+build: [make]
+
+depexts: [
+ [ ["ubuntu"] ["libncurses-dev" "zlib1g-dev"] ]
+ [ ["debian"] ["libncurses-dev" "zlib1g-dev"] ]
+]
