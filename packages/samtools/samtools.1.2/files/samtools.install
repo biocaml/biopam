@@ -22,6 +22,4 @@ bin: [
   "misc/zoom2sam.pl"
 ]
 
-man: [
-  "samtools.1" {"man/man1"}
-]
+man: [ "samtools.1" ]
