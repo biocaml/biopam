@@ -42,7 +42,7 @@ Once you have `opam` installed, you need to initialize it and tell it
 to look for the package descriptions provided by `biopam` by doing:
 
 ```
-opam init -n --compiler=0.0.0 biopam https://github.com/solvuu/biopam
+opam init -n --compiler=0.0.0 biopam https://github.com/solvuu/biopam.git
 ```
 
 That's it. Now you can start installing packages, e.g.
