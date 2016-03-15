@@ -1,1 +1,56 @@
-bin: ["samtools"]
+lib: [
+  "libbam.a"
+  "bam.h"
+  "bam2bcf.h"
+  "bam_endian.h"
+  "bam_tview.h"
+  "bcftools/bcf.h" {"bcftools/bcf.h"}
+  "bcftools/kmin.h" {"bcftools/kmin.h"}
+  "bcftools/prob1.h" {"bcftools/prob1.h"}
+  "bgzf.h"
+  "errmod.h"
+  "faidx.h"
+  "kaln.h"
+  "khash.h"
+  "klist.h"
+  "knetfile.h"
+  "kprobaln.h"
+  "kseq.h"
+  "ksort.h"
+  "kstring.h"
+  "misc/md5.h" {"misc/md5.h"}
+  "razf.h"
+  "sam.h"
+  "sam_header.h"
+  "sample.h"
+]
+
+bin: [
+  "samtools"
+  "bcftools/bcftools"
+  "bcftools/vcfutils.pl"
+  "misc/ace2sam"
+  "misc/bamcheck"
+  "misc/blast2sam.pl"
+  "misc/bowtie2sam.pl"
+  "misc/export2sam.pl"
+  "misc/interpolate_sam.pl"
+  "misc/maq2sam-long"
+  "misc/maq2sam-short"
+  "misc/md5fa"
+  "misc/md5sum-lite"
+  "misc/novo2sam.pl"
+  "misc/plot-bamcheck"
+  "misc/psl2sam.pl"
+  "misc/r2plot.lua"
+  "misc/sam2vcf.pl"
+  "misc/samtools.pl"
+  "misc/soap2sam.pl"
+  "misc/varfilter.py"
+  "misc/vcfutils.lua"
+  "misc/wgsim"
+  "misc/wgsim_eval.pl"
+  "misc/zoom2sam.pl"
+]
+
+man: [ "samtools.1" ]
