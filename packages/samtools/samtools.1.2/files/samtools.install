@@ -1,3 +1,72 @@
+lib: [
+  "libbam.a"
+  "bam.h"
+  "bam2bcf.h"
+  "bam_endian.h"
+  "bam_lpileup.h"
+  "bam_plbuf.h"
+  "bam_tview.h"
+  "errmod.h"
+  "kprobaln.h"
+  "sam.h"
+  "sam_header.h"
+  "sample.h"
+  "samtools.h"
+  "stats_isize.h"
+  "version.h"
+  "htslib-1.2.1/libhts.a" {"htslib-1.2.1/libhts.a"}
+  "htslib-1.2.1/cram/cram.h" {"htslib-1.2.1/cram/cram.h"}
+  "htslib-1.2.1/cram/cram_codecs.h" {"htslib-1.2.1/cram/cram_codecs.h"}
+  "htslib-1.2.1/cram/cram_decode.h" {"htslib-1.2.1/cram/cram_decode.h"}
+  "htslib-1.2.1/cram/cram_encode.h" {"htslib-1.2.1/cram/cram_encode.h"}
+  "htslib-1.2.1/cram/cram_index.h" {"htslib-1.2.1/cram/cram_index.h"}
+  "htslib-1.2.1/cram/cram_io.h" {"htslib-1.2.1/cram/cram_io.h"}
+  "htslib-1.2.1/cram/cram_samtools.h" {"htslib-1.2.1/cram/cram_samtools.h"}
+  "htslib-1.2.1/cram/cram_stats.h" {"htslib-1.2.1/cram/cram_stats.h"}
+  "htslib-1.2.1/cram/cram_structs.h" {"htslib-1.2.1/cram/cram_structs.h"}
+  "htslib-1.2.1/cram/md5.h" {"htslib-1.2.1/cram/md5.h"}
+  "htslib-1.2.1/cram/mFILE.h" {"htslib-1.2.1/cram/mFILE.h"}
+  "htslib-1.2.1/cram/misc.h" {"htslib-1.2.1/cram/misc.h"}
+  "htslib-1.2.1/cram/open_trace_file.h" {"htslib-1.2.1/cram/open_trace_file.h"}
+  "htslib-1.2.1/cram/os.h" {"htslib-1.2.1/cram/os.h"}
+  "htslib-1.2.1/cram/pooled_alloc.h" {"htslib-1.2.1/cram/pooled_alloc.h"}
+  "htslib-1.2.1/cram/rANS_byte.h" {"htslib-1.2.1/cram/rANS_byte.h"}
+  "htslib-1.2.1/cram/rANS_static.h" {"htslib-1.2.1/cram/rANS_static.h"}
+  "htslib-1.2.1/cram/sam_header.h" {"htslib-1.2.1/cram/sam_header.h"}
+  "htslib-1.2.1/cram/string_alloc.h" {"htslib-1.2.1/cram/string_alloc.h"}
+  "htslib-1.2.1/cram/thread_pool.h" {"htslib-1.2.1/cram/thread_pool.h"}
+  "htslib-1.2.1/cram/vlen.h" {"htslib-1.2.1/cram/vlen.h"}
+  "htslib-1.2.1/cram/zfio.h" {"htslib-1.2.1/cram/zfio.h"}
+  "htslib-1.2.1/hfile_internal.h" {"htslib-1.2.1/hfile_internal.h"}
+  "htslib-1.2.1/htslib/bgzf.h" {"htslib-1.2.1/htslib/bgzf.h"}
+  "htslib-1.2.1/htslib/faidx.h" {"htslib-1.2.1/htslib/faidx.h"}
+  "htslib-1.2.1/htslib/hfile.h" {"htslib-1.2.1/htslib/hfile.h"}
+  "htslib-1.2.1/htslib/hts.h" {"htslib-1.2.1/htslib/hts.h"}
+  "htslib-1.2.1/htslib/hts_defs.h" {"htslib-1.2.1/htslib/hts_defs.h"}
+  "htslib-1.2.1/htslib/kfunc.h" {"htslib-1.2.1/htslib/kfunc.h"}
+  "htslib-1.2.1/htslib/khash.h" {"htslib-1.2.1/htslib/khash.h"}
+  "htslib-1.2.1/htslib/khash_str2int.h" {"htslib-1.2.1/htslib/khash_str2int.h"}
+  "htslib-1.2.1/htslib/klist.h" {"htslib-1.2.1/htslib/klist.h"}
+  "htslib-1.2.1/htslib/knetfile.h" {"htslib-1.2.1/htslib/knetfile.h"}
+  "htslib-1.2.1/htslib/kseq.h" {"htslib-1.2.1/htslib/kseq.h"}
+  "htslib-1.2.1/htslib/ksort.h" {"htslib-1.2.1/htslib/ksort.h"}
+  "htslib-1.2.1/htslib/kstring.h" {"htslib-1.2.1/htslib/kstring.h"}
+  "htslib-1.2.1/htslib/regidx.h" {"htslib-1.2.1/htslib/regidx.h"}
+  "htslib-1.2.1/htslib/sam.h" {"htslib-1.2.1/htslib/sam.h"}
+  "htslib-1.2.1/htslib/synced_bcf_reader.h" {"htslib-1.2.1/htslib/synced_bcf_reader.h"}
+  "htslib-1.2.1/htslib/tbx.h" {"htslib-1.2.1/htslib/tbx.h"}
+  "htslib-1.2.1/htslib/vcf.h" {"htslib-1.2.1/htslib/vcf.h"}
+  "htslib-1.2.1/htslib/vcf_sweep.h" {"htslib-1.2.1/htslib/vcf_sweep.h"}
+  "htslib-1.2.1/htslib/vcfutils.h" {"htslib-1.2.1/htslib/vcfutils.h"}
+  "htslib-1.2.1/version.h" {"htslib-1.2.1/version.h"}
+  "misc/md5.h" {"misc/md5.h"}
+  "win32/libcurses.a" {"win32/libcurses.a"}
+  "win32/libz.a" {"win32/libz.a"}
+  "win32/xcurses.h" {"win32/xcurses.h"}
+  "win32/zconf.h" {"win32/zconf.h"}
+  "win32/zlib.h" {"win32/zlib.h"}
+]
+
 bin: [
   "samtools"
   "misc/ace2sam"
