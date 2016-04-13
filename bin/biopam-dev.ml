@@ -1,10 +1,10 @@
 #! /usr/bin/env ocamlscript
 Ocaml.ocamlflags := ["-thread"];
-Ocaml.packs := ["phat.async_unix"]
+Ocaml.packs := ["phat.async"]
 --
 open Core.Std
 open Async.Std
-module Phat = Phat_async_unix.Std
+module Phat = Phat_async.Std
 
 let make_install_file ?src_prefix preserve_dirs root_dir src_dir
     : (Phat.rel_file * Phat.rel_file option) list Or_error.t Deferred.t
