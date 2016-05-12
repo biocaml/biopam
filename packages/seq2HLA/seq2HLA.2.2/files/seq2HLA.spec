@@ -8,7 +8,7 @@ a = Analysis(['seq2HLA.py'],
                    ,('*.dbmhc', '.')
                    ,('references','references')
                    ],
-             hiddenimports=['Bio', 'six','packaging', 'packaging.version', 'packaging.specifiers'],
+             hiddenimports=['Bio', 'six','packaging', 'packaging.requirements', 'packaging.version', 'packaging.specifiers'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
