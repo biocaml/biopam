@@ -31,6 +31,12 @@ check_package("pandas")
 check_package("pysam")
 check_package("matplotlib")
 
+check_package("six")
+check_package("packaging")
+check_package("packaging.requirements")
+check_package("packaging.version")
+check_package("packaging.specifiers")
+
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
 exe = EXE(pyz,
