@@ -8,7 +8,7 @@ a = Analysis(['seq2HLA.py'],
                    ,('*.dbmhc', '.')
                    ,('references','references')
                    ],
-             hiddenimports=['Bio'],
+             hiddenimports=['Bio', 'six','packaging', 'packaging.requirements', 'packaging.version', 'packaging.specifiers'],
              hookspath=[],
              runtime_hooks=[],
              excludes=[],
@@ -20,10 +20,21 @@ a = Analysis(['seq2HLA.py'],
 # install script succeed, while the resulting executable won't run, we check
 # for the required packages here.
 
-# Check to make sure that Biopython is actaully in the system!
-if filter(lambda x: x[0].startswith('Bio'), a.pure) == []:
-  print "Missing Biopython package!"
-  sys.exit(-1)
+packages = map(lambda x: x[0], a.pure)
+
+def check_package(module_name):
+  #seems to be the canonical way of finding elements in a list via Python2
+  if filter(lambda x: x.startswith(module_name), packages) == []:
+    print "Missing " + module_name + " package!"
+    sys.exit(-1)
+
+check_package("Bio")
+check_package("six")
+check_package("packaging")
+check_package("packaging.requirements")
+check_package("packaging.version")
+check_package("packaging.specifiers")
+
 
 pyz = PYZ(a.pure, a.zipped_data,
              cipher=block_cipher)
